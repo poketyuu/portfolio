@@ -1,0 +1,248 @@
+html {
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin-top: 0px;
+    background-color: rgb(250, 250, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portfolio_title {
+    font-family: "Hiragino Sans", sans-serif;
+    font-weight: 800;
+    font-size: 5.8vh;
+    text-decoration: none;
+    color: black;
+}
+.cut_carousel {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    scroll-snap-type: x mandatory;
+    position: relative;
+}
+
+.cut_carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.cut_slidebtn_area {
+    position: absolute;
+    bottom: 2vh;
+    width: 66vh;
+}
+
+.cut_carousel .circlecut_whole {
+    margin: 0px;
+    width: 70vh;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+    overflow-x: hidden;
+    object-fit: cover;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    opacity: 0.5;
+}
+
+.circlecut_num {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    width: 16vh;
+    height: 16vh;
+    background-color: white;
+}
+
+.circlecut_name {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 2vh;
+    left: 20vh;
+    width: 48vh;
+    height: 16vh;
+    background-color: white;
+}
+
+.circlecut_space {
+    position: absolute;
+    top: 20vh;
+    left: 2vh;
+    width: 66vh;
+    height: 78vh;
+    background-color: white;
+}
+
+/* UI設置エリアの設定*/
+.ui_area {
+    height: 96vh;
+    width: 96vh;
+    bottom: 2vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.slidenav_area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 66vh;
+    bottom: 0px;
+    z-index: 2;
+}
+
+.slidenav_content {
+    font-family: "Hiragino Sans", sans-serif;
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: 400;
+    color: gray;
+}
+
+.slidenav_content:hover {
+    color: black;
+}
+
+.slidenav_active {
+    color: black;
+    font-weight: 600;
+}
+
+.btnarea_left {
+    position: absolute;
+    height: 100%;
+    width: 13vh;
+    left: 0;
+    z-index: 1;
+}
+
+.btnarea_right {
+    position: absolute;
+    height: 100%;
+    width: 13vh;
+    right: 0;
+    z-index: 1;
+}
+
+.btn_shift {
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.btn_shift:hover {
+    opacity: 0.8;
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+}
+
+.arrow::before {
+    content: "";
+    width: 4vh;
+    height: 4vh;
+    border-top: solid 1vh black;
+    border-left: solid 1vh black;
+    position: absolute;
+}
+
+.arrow_left {
+    top: 48vh;
+    left: -1vh;
+}
+
+.arrow_right {
+    top: 48vh;
+    left: 1vh;
+}
+
+.arrow.arrow_left::before {
+    transform-origin: top left;
+    transform: rotate(-45deg);
+}
+
+.arrow.arrow_right::before {
+    transform-origin: top left;
+    transform: rotate(135deg);
+}
+@media (max-width: 96vh){
+    .ui_area{
+        width: 70vh;
+        height: 96vh;
+    }
+}
+@media (max-width: 70vh){
+    .portfolio_title{
+        font-size: 8.1vw;
+    }
+    .cut_carousel .circlecut_whole{
+        width: 98vw;
+        height: 140vw;
+    }
+    .circlecut_num{
+        top: 2.8vw;
+        left: 2.8vw;
+        width: 22.4vw;
+        height: 22.4vw;
+    }
+    .circlecut_name{
+        top: 2.8vw;
+        left: 28vw;
+        width: 67.2vw;
+        height: 22.4vw;
+    }
+    .circlecut_space{
+        top: 28vw;
+        left: 2.8vw;
+        width: 92.4vw;
+        height: 109.2vw;
+    }
+    .ui_area{
+        height: 109.2vw;
+        width: 92.4vw;
+        top: 28vw;
+        bottom: auto;
+    }
+    .slidenav_area{
+        width: 92.4vw;
+    }
+    .slidenav_content{
+        font-size: 5.6vw;
+    }
+    .btnarea_left{
+        width: 14vw;
+    }
+    .btnarea_right{
+        width: 14vw;
+    }
+    .btn_shift{
+        opacity: 0.3;
+    }
+    .btn_shift:hover{
+        opacity: 0.6;
+    }
+    .arrow::before{
+        width: 5vw;
+        height: 5vw;
+        border-top: solid 1vw;
+        border-left: solid 1vw;
+    }
+    .arrow_left{
+        top: 48vw;
+        left: -1vw;
+    }
+    .arrow_right{
+        top: 48vw;
+        left: 1vh;
+    }
+}
