@@ -14,6 +14,7 @@ body {
     text-decoration: none;
     color: black;
 }
+/* カルーセルメイン部分 */
 .cut_carousel {
     display: flex;
     overflow-x: scroll;
@@ -74,6 +75,15 @@ body {
     width: 66vh;
     height: 78vh;
     background-color: white;
+}
+.circlecut_space p{
+    font-size: 2.5vh;
+}
+.circlecut_space h2{
+    font-size: 4vh;
+}
+.circlecut_space h3{
+    font-size: 3.5vh;
 }
 
 /* UI設置エリアの設定*/
@@ -175,6 +185,60 @@ body {
     transform-origin: top left;
     transform: rotate(135deg);
 }
+/* 各コンテンツ内要素調整 */
+.icon_area{
+    width: 8vh;
+    height: 8vh;
+}
+.icon_area i{
+    font-size: 8vh;
+}
+.text_small{
+    font-size: 2vh;
+}
+.icon_enum i{
+    font-size: 4vh;
+}
+.toolname_long{
+    height: 3.5vh;
+    font-size: 2.5vh;
+}
+.card_product{
+    height: 30vh;
+    width: 60vh;
+}
+.card img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.card h2{
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+.card-title a{
+    text-decoration: none;
+    color: black;
+}
+.card-title a:hover{
+    text-decoration: underline;
+}
+.card .card_bottom{
+    position: absolute;
+    height: auto;
+    bottom: 2px;
+}
+span.oval_border {
+    font-size: 1.5vh;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border: solid 1px black;
+    border-radius: 20px;
+    background-color: white;
+}
+
 @media (max-width: 96vh){
     .ui_area{
         width: 70vh;
@@ -206,6 +270,15 @@ body {
         left: 2.8vw;
         width: 92.4vw;
         height: 109.2vw;
+    }
+    .circlecut_space p{
+        font-size: 3.5vw;
+    }
+    .circlecut_space h2{
+        font-size: 5.6vw
+    }
+    .circlecut_space h3{
+        font-size: 4.9vw;
     }
     .ui_area{
         height: 109.2vw;
@@ -245,4 +318,62 @@ body {
         top: 48vw;
         left: 1vh;
     }
+    /* 各コンテンツ内要素調整 */
+    .icon_area {
+        width: 11.2vw;
+        height: 11.2vw;
+    }
+    
+    .icon_area i {
+        font-size: 11.2vw;
+    }
+    
+    .text_small {
+        font-size: 2.8vw;
+    }
+    
+    .icon_enum i {
+        font-size: 5.6vw;
+    }
+    
+    .toolname_long {
+        height: 4.9vw;
+        font-size: 3.5vw;
+    }
+    
+    .card_product {
+        height: 42vw;
+        width: 84vw;
+    }
+    
+    .card img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .card h2 {
+        font-size: 3.2vw;
+        font-weight: 600;
+    }
+    
+    .card .card_bottom {
+        position: absolute;
+        height: auto;
+        bottom: 2px;
+    }
+    
+    span.oval_border {
+        display: inline-block;
+        font-size: 2.1vw;
+        padding-top: 1.5px;
+        padding-bottom: 1.5px;
+        padding-right: 3px;
+        padding-left: 3px;
+        border: solid 1px black;
+        border-radius: 12px;
+        background-color: white;
+        line-height: 2vw;
+    }
+    
 }

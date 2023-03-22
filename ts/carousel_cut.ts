@@ -40,9 +40,9 @@ class CutCarousel{
     }
     index() {
         //画面内に表示されてるサークルカットの数を確認,複数入るスペースがある場合はその分中心判定をずらす
-        var inscreencut = window.innerWidth / this.slidelength;
+        let inscreencut = window.innerWidth / this.slidelength;
         console.log(inscreencut);
-        var index = Math.round(this.element.scrollLeft / this.slidelength);
+        let index = Math.round(this.element.scrollLeft / this.slidelength);
         return index - DUMMY_NUM + Math.floor(inscreencut/2);
     }
     scroll() {
