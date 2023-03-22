@@ -225,6 +225,7 @@ body {
 }
 .card .card_bottom{
     position: absolute;
+    line-height: 3vh;
     height: auto;
     bottom: 2px;
 }
@@ -360,6 +361,7 @@ span.oval_border {
     .card .card_bottom {
         position: absolute;
         height: auto;
+        line-height: 4.2vw;
         bottom: 2px;
     }
     
