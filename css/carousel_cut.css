@@ -45,6 +45,7 @@ body {
     scroll-snap-align: center;
     flex-shrink: 0;
     opacity: 0.5;
+    filter: grayscale(1);
 }
 
 .circlecut_num {
@@ -80,10 +81,47 @@ body {
     font-size: 2.5vh;
 }
 .circlecut_space h2{
+    line-height: 4vh;
+    font-weight: 800;
     font-size: 4vh;
 }
 .circlecut_space h3{
     font-size: 3.5vh;
+}
+.circlecut_space .text_subtitle{
+    line-height: 1;
+    font-weight: 400;
+    font-size: 3vh;
+}
+.circlecut_space .circlecut_text{
+    position: relative;
+    z-index: 1;
+}
+.circlecut_space .circlecut_illust{
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    width: 66vh;
+    height: 78vh;
+    z-index: 0;
+}
+.circlecut_illust img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.circlecut_icon{
+    margin: 0 auto;
+    right: auto;
+    width: 35vh;
+    height: 35vh;
+}
+.circlecut_icon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 1.5px #404040;
 }
 
 /* UI設置エリアの設定*/
@@ -104,7 +142,8 @@ body {
     margin: auto;
     width: 66vh;
     bottom: 0px;
-    z-index: 2;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .slidenav_content {
@@ -112,7 +151,7 @@ body {
     text-decoration: none;
     font-size: 4vh;
     font-weight: 400;
-    color: gray;
+    color: rgb(72, 72, 72);
 }
 
 .slidenav_content:hover {
@@ -129,7 +168,7 @@ body {
     height: 100%;
     width: 13vh;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .btnarea_right {
@@ -137,7 +176,7 @@ body {
     height: 100%;
     width: 13vh;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .btn_shift {
@@ -229,6 +268,9 @@ body {
     height: auto;
     bottom: 2px;
 }
+.card .card-link{
+    font-size: 2vh;
+}
 span.oval_border {
     font-size: 1.5vh;
     padding-top: 2px;
@@ -276,10 +318,28 @@ span.oval_border {
         font-size: 3.5vw;
     }
     .circlecut_space h2{
+        line-height: 5.6vw;
         font-size: 5.6vw
     }
     .circlecut_space h3{
         font-size: 4.9vw;
+    }
+    .circlecut_space .text_subtitle{
+        font-size: 4.2vw;
+    }
+    .circlecut_space .circlecut_illust {
+        position: absolute;
+        top: 0vh;
+        left: 0vh;
+        width: 92.4vw;
+        height: 109.2vw;
+        z-index: 0;
+    }
+    .circlecut_icon {
+        margin: 0 auto;
+        right: auto;
+        width: 49vw;
+        height: 49vw;
     }
     .ui_area{
         height: 109.2vw;
@@ -363,6 +423,9 @@ span.oval_border {
         height: auto;
         line-height: 4.2vw;
         bottom: 2px;
+    }
+    .card .card-link{
+        font-weight: 2.8vw;
     }
     
     span.oval_border {

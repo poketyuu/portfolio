@@ -47,10 +47,12 @@ class CutCarousel{
     }
     scroll() {
         (<HTMLElement>this.contents[this.curnum + DUMMY_NUM].element).style.opacity = "0.5";
+        (<HTMLElement>this.contents[this.curnum + DUMMY_NUM].element).style.filter = "grayscale(1)";
         this.indicators[this.curnum].classList.remove("slidenav_active");
         this.curnum = this.index();
         this.resetdummy();
         (<HTMLElement>this.contents[this.curnum + DUMMY_NUM].element).style.opacity = "1.0";
+        (<HTMLElement>this.contents[this.curnum + DUMMY_NUM].element).style.filter = "grayscale(0)";
         this.indicators[this.curnum].classList.add("slidenav_active");
     }
     resetdummy() {
@@ -94,10 +96,10 @@ class CutElement{
         this.isdummy = isdum;
     }
 }
-var timeoutld: number;
+let timeoutld: number;
 window.onload = function () {
-    var cut_element = document.querySelector<HTMLElement>(".cut_carousel")!;
-    var cutfolio = new CutCarousel(cut_element, ".circlecut_whole")
+    let cut_element = document.querySelector<HTMLElement>(".cut_carousel")!;
+    let cutfolio = new CutCarousel(cut_element, ".circlecut_whole")
     cut_element.onscroll = event => {
         clearTimeout(timeoutld);
         timeoutld = setTimeout(
@@ -107,8 +109,8 @@ window.onload = function () {
         )
     }
     window.onresize = () => { cutfolio.resize() };
-    var btnPrev = <HTMLButtonElement>document.querySelector(".btn_prev")!;
-    var btnNext = <HTMLButtonElement>document.querySelector(".btn_next")!;
+    let btnPrev = <HTMLButtonElement>document.querySelector(".btn_prev")!;
+    let btnNext = <HTMLButtonElement>document.querySelector(".btn_next")!;
     btnPrev.onclick = () => { cutfolio.prev() };
     btnNext.onclick = () => { cutfolio.next() };
 }

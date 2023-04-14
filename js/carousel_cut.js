@@ -36,10 +36,12 @@ class CutCarousel {
     }
     scroll() {
         this.contents[this.curnum + DUMMY_NUM].element.style.opacity = "0.5";
+        this.contents[this.curnum + DUMMY_NUM].element.style.filter = "grayscale(1)";
         this.indicators[this.curnum].classList.remove("slidenav_active");
         this.curnum = this.index();
         this.resetdummy();
         this.contents[this.curnum + DUMMY_NUM].element.style.opacity = "1.0";
+        this.contents[this.curnum + DUMMY_NUM].element.style.filter = "grayscale(0)";
         this.indicators[this.curnum].classList.add("slidenav_active");
     }
     resetdummy() {
