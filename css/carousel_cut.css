@@ -252,6 +252,9 @@ body {
     height: 30vh;
     width: 60vh;
 }
+.card .card_img{
+    height: 100%;
+}
 .card img{
     object-fit: cover;
     height: 100%;
