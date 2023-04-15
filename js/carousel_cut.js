@@ -82,10 +82,10 @@ class CutElement {
         this.isdummy = isdum;
     }
 }
-var timeoutld;
+let timeoutld;
 window.onload = function () {
-    var cut_element = document.querySelector(".cut_carousel");
-    var cutfolio = new CutCarousel(cut_element, ".circlecut_whole");
+    let cut_element = document.querySelector(".cut_carousel");
+    let cutfolio = new CutCarousel(cut_element, ".circlecut_whole");
     cut_element.onscroll = event => {
         clearTimeout(timeoutld);
         timeoutld = setTimeout(function () {
@@ -93,8 +93,8 @@ window.onload = function () {
         }, 100);
     };
     window.onresize = () => { cutfolio.resize(); };
-    var btnPrev = document.querySelector(".btn_prev");
-    var btnNext = document.querySelector(".btn_next");
+    let btnPrev = document.querySelector(".btn_prev");
+    let btnNext = document.querySelector(".btn_next");
     btnPrev.onclick = () => { cutfolio.prev(); };
     btnNext.onclick = () => { cutfolio.next(); };
 };
