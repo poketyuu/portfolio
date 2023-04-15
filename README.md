@@ -24,6 +24,9 @@ HTML5,CSS3,TypeScript
 ### 参考サイト
 
 <https://qiita.com/wintyo/items/a37a197f69aa205297a5>
+
 <https://zenn.dev/rabee/articles/modern-javascript-css-carousel>
+
 <https://developer.mozilla.org/ja/docs/Web/API/Element/scrollIntoView>
+
 <https://developer.mozilla.org/ja/docs/Web/CSS/scroll-snap-type>
