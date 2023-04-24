@@ -1,0 +1,34 @@
+.portfolio_header{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+.circlecut_icon {
+    margin: 0 auto;
+    right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.circlecut_icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: solid 1.5px #404040;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.text_attention{
+    font-size: 20px;
+}
+.text_attention a{
+    font-size: 30px;
+}
+.attention_box{
+    border: solid 5px red;
+}
+.card-footer{
+    line-height: 2rem;
+}

@@ -8,71 +8,61 @@
         </link>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link rel="stylesheet" href="/css/portfolio_style.css">
-        <title>poketyuu's portfolio</title>
+        <link rel="stylesheet" href="/css/sitagaki.css">
+        <title>Ryota Yamamoto's portfolio</title>
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <div class="container px-2 py-2">
-                    <a class="navbar-brand" href="/">Poketyuu's portfolio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                    </button>
-                    <div class="navbar-collapse collapse" id="navbarCollapse">
-                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="/">top</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="nav-link" href="#profile">profile</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skill">skill</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#products">products</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
         <main>
             <div class="container-fluid bg-dark">
-                <section class="section" id="top">
-                    <div class="portfolio_top">
-                        <h1 class="text-center portfolio_title mb-4">Poketyuu's portfolio</h1>
-                        <h2 class="text-center">~ programmar / web engineer ~</h2>
-                    </div>
-                </section>
+                <div class="portfolio_header">
+                    <h1 class="text-center portfolio_title mb-4">Ryota Yamamoto's portfolio</h1>
+                    <h2 class="text-center">~ programmar / web engineer ~</h2>
+                </div>
             </div>
             <div class="container-fluid bg-secondary bg-opacity-10">
                 <div class="container px-5 py-5">
-                    <section class="section" id="profile">
-                        <h1 class="text-center">profile</h1>
-                        <div class="container px-4 py-5">
-                                <p>
+                    <div class="py-4 mb-4 bg-light attention_box pb-4">
+                        <h1 class="text-center text-danger mb-4">Attention!</h1>
+                        <p class="text-center text_attention">
+                            よりデザインに趣向を凝らした動きのあるポートフォリオサイトがございますので、ぜひそちらもご覧ください。<br>
+                            <a href="https://poketyuu.github.io/portfolio/">https://poketyuu.github.io/portfolio/</a>
+                        </p>
+                    </div>
+                    <h1 class="text-center pb-2 mb-4">profile</h1>
+                    <div class="row pb-5">
+                        <div class="col-1"></div>
+                        <div class="col-3">
+                            <div class="circlecut_icon">
+                                <img src="./images/original_icon.jpg" alt="icon_github" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="d-flex h-100 align-items-center">
+                                <p class="mb-0">
+                                    初めまして。poketyuuと申します。(<a href="https://github.com/poketyuu">GitHub</a>)<br>
                                     京都大学工学部情報学科計算機科学コース在学中<br>
                                     <a href="https://www.kmc.gr.jp/">京大マイコンクラブ(KMC)</a>所属<br>
-                                    3年ほどC#をメインで扱う開発補佐業務のアルバイトをしていました。<br>
-                                    創作活動や創作物を見るのが好きです。<br>
-                                    趣味はお絵描き(<a href="https://www.pixiv.net/users/15114584">pixiv</a>)
+                                    C++,C#を主に使用しています。<br>
+                                    3年程、C#を主に扱うWindowsアプリケーションの開発補佐業務の
+                                    アルバイトをしていました。<br>
+                                    同人活動、創作活動全般が好きです。<br>
+                                    趣味はイラストを描くことです。(<a href="https://www.pixiv.net/users/15114584">pixiv</a>)<br>
                                 </p>
+                            </div>
                         </div>
-                    </section>
+                    </div>
                     <section class="section" id="skill">
                         <h1 class="pb-0 text-center">skill</h1>
                         <section>
                             <div class="container px-4 py-3">
                                 <h3 class="pb-2 border-bottom text-center">Programming language</h3>
-                                <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                                    <div class="col">
+                                <div class="row g-4 pb-5 pt-2">
+                                    <div class="col-4">
                                         <div class="card h-100">
                                             <div class="card-body">
                                                 <h2 class="card-title d-flex align-items-center"><i class="devicon-cplusplus-plain colored"></i>&nbsp;C++
                                                 </h2>
-                                                <h5 class="card-subtitle">経験年数:4年</h5>
+                                                <h5 class="card-subtitle mb-2">経験年数:4年</h5>
                                                 <p class="card-text">
                                                     差分法を用いた1次元Laplace方程式の数値解の導出,ガウス法を用いて代数方程式を解くプログラム等
                                                     <br>
@@ -81,11 +71,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
                                         <div class="card h-100">
                                             <div class="card-body">
                                                 <h2 class="card-title d-flex align-items-center"><i class="devicon-csharp-plain colored"></i>&nbsp;C#</h2>
-                                                <h5 class="card-subtitle">経験年数:6年</h5>
+                                                <h5 class="card-subtitle mb-2">経験年数:6年</h5>
                                                 <p class="card-text">
                                                     Unityを用いたゲーム開発<br>
                                                     Windows FormやWPFを用いたデスクトップアプリケーション開発等
@@ -93,11 +83,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
                                         <div class="card h-100">
                                             <div class="card-body">
                                                 <h2 class="card-title d-flex align-items-center"><i class="devicon-java-plain-wordmark colored"></i>&nbsp;Java</h2>
-                                                <h5 class="card-subtitle">経験年数:4年</h5>
+                                                <h5 class="card-subtitle mb-2">経験年数:4年</h5>
                                                 <p class="card-text">
                                                     マリオAI<br>
                                                     Java Servletを用いたWebアプリケーション開発
@@ -105,11 +95,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
                                         <div class="card h-100">
                                             <div class="card-body">
                                                 <h2 class="card-title d-flex align-items-center"><i class="devicon-python-plain colored"></i>&nbsp;Python</h2>
-                                                <h5 class="card-subtitle">経験年数:2年</h5>
+                                                <h5 class="card-subtitle mb-2">経験年数:2年</h5>
                                                 <p class="card-text">
                                                     基本周波数推定や和音推定などの音声処置を行うプログラム<br>
                                                     出生死滅過程,ランダムサーファーモデル等のシミュレーション
@@ -117,26 +107,27 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
                                         <div class="card h-100">
                                             <div class="card-body">
-                                                <h2 class="card-title d-flex align-items-center"><i class="devicon-html5-plain colored"></i>&nbsp;HTML5+<i class="devicon-css3-plain colored"></i>&nbsp;CSS3</h2>
-                                                <h5 class="card-subtitle">経験年数:1年</h5>
+                                                <h2 class="card-title d-flex align-items-center"><i class="devicon-html5-plain-wordmark colored"></i>HTML5+<i class="devicon-css3-plain-wordmark colored"></i>CSS3
+                                                </h2>
+                                                <h5 class="card-subtitle mb-2">経験年数:1年</h5>
                                                 <p class="card-text">
-                                                    当ポートフォリオ<br>
-                                                    上述のWebアプリケーション開発で使用<br>
-                                                    (厳密にはプログラミング言語ではないですが、簡略化のためここに記載します)
+                                                    ポートフォリオサイトのデザイン<br>
+                                                    自作Webアプリケーションの各種画面のデザイン
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-4">
                                         <div class="card h-100">
                                             <div class="card-body">
-                                                <h2 class="card-title d-flex align-items-center">その他</h2>
+                                                <h2 class="card-title d-flex align-items-center">others</h2>
                                                 <ul class="list-group list-group-flush">
                                                     <li class="list-group-item"><i class="devicon-ocaml-plain colored"></i>&nbsp;OCaml</li>
                                                     <li class="list-group-item"><i class="devicon-javascript-plain colored"></i>&nbsp;JavaScript</li>
+                                                    <li class="list-group-item"><i class="devicon-typescript-plain colored"></i>&nbsp;TypeScript</li>
                                                     <li class="list-group-item"><i class="devicon-c-plain colored"></i>&nbsp;C言語</li>
                                                     <li class="list-group-item">Visual Basic</li>
                                                 </ul>
@@ -145,12 +136,12 @@
                                     </div>
                                 </div>
                                 <h3 class="pb-2 border-bottom text-center">database,tool,framework,etc.</h3>
-                                <div class="row g-4 py-5 row-col-1 row-cols-md-2 row-cols-lg-3">
+                                <div class="row g-4 pb-5 pt-2 row-col-1 row-cols-md-2 row-cols-lg-3">
                                     <div class="col">
                                         <div class="card h-100">
                                             <div class="card-body">
                                                 <h2 class="card-title"><i class="devicon-postgresql-plain colored"></i>&nbsp;PostgreSQL</h2>
-                                                <h5 class="card-subtitle">経験年数:1年</h5>
+                                                <h5 class="card-subtitle">経験年数:2年</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +156,7 @@
                                     <div class="col">
                                         <div class="card h-100">
                                             <div class="card-body">
-                                                <h2 class="card-title"><i class="devicon-github-original colored"></i>&nbsp;github</h2>
+                                                <h2 class="card-title"><i class="devicon-github-original colored"></i>&nbsp;GitHub</h2>
                                                 <h5 class="card-subtitle">経験年数:6年</h5>
                                             </div>
                                         </div>
@@ -174,7 +165,7 @@
                                         <div class="card h-100">
                                             <div class="card-body">
                                                 <h2 class="card-title"><i class="devicon-bootstrap-plain colored"></i>&nbsp;bootstrap</h2>
-                                                <h5 class="card-subtitle">経験年数:1年</h5>
+                                                <h5 class="card-subtitle">経験年数:2年</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -194,6 +185,30 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h2 class="card-title"><i class="devicon-apache-line-wordmark colored"></i>&nbsp;Apache2</h2>
+                                                <h5 class="card-text">経験年数:半年</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h2 class="card-title"><i class="devicon-jupyter-plain-wordmark colored"></i>&nbsp;Jupyter</h2>
+                                                <h5 class="card-text">経験年数:2年</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h2 class="card-title"><i class="devicon-dotnetcore-plain colored"></i>&nbsp;.NET</h2>
+                                                <h5 class="card-text">経験年数:4年</h5>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -202,8 +217,8 @@
                         <div class="container px-4 py-5">
                             <h1 class = "pb-2 text-center">Products</h1>
                             <div class="row g-2">
-                                <div class="col-12">
-                                    <div class="card">
+                                <div class="col-6">
+                                    <div class="card h-100">
                                         <a href="https://illust-idea-and-progress.com/" target="_blank">
                                             <img class="card-img-top" src="/images/img_idea.jpg" alt="illust-idea-and-progress main page">
                                         </a>
@@ -227,36 +242,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-md-6">
                                     <div class="card h-100">
+                                        <a href="https://poketyuu.github.io/portfolio/" target="_blank">
+                                            <img class="card-img-top" src="/images/portfolio_wide.jpg" alt="illust-idea-and-progress main page">
+                                        </a>
                                         <div class="card-body">
-                                            <h4 class="card-title">ポートフォリオ</h4>
+                                            <h2 class="card-title">ポートフォリオ</h2>
+                                            <h5 class="card-subtitle mb-2 text-muted">Poketyuu's portfolio</h5>
                                             <p class="card-text">
-                                                このポートフォリオサイトです。
+                                                上記ポートフォリオサイトです。<br>
+                                                同人即売会等で用いられるサークルカットをモチーフにデザインしました。
                                             </p>
                                             <a href="https://github.com/poketyuu/portfolio" class="card-link">github</a>
                                         </div>
                                         <div class="card-footer">
                                             <span class="oval_border">HTML5</span>
                                             <span class="oval_border">CSS3</span>
+                                            <span class="oval_border">TypeScript</span>
                                             <span class="oval_border">bootstrap5</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="/images/img_myuu.png" alt="夢遊 ゲーム画面">
-                                        <div class="card-body">
-                                            <h4 class="card-title">横スクロールアクションゲーム</h4>
-                                            <h5 class="card-subtitle text-muted">夢遊</h5>
-                                            <p class="card-text">
-                                                10人ほどのチームで開発<br>
-                                                自分は自キャラクターや敵の動きなどのメインプログラムを担当しました。
-                                            </p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <span class="oval_border">C#</span>
-                                            <span class="oval_border">Unity</span>
                                         </div>
                                     </div>
                                 </div>
